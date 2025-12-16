@@ -3,3 +3,8 @@
 #include <functional>
 
 // tutaj funkcja polejSosem
+template<typename T>
+std::size_t polejSosem(const Tagliatelle& obiekt, const T& sos)
+{
+	return sos.polej(obiekt);
+}

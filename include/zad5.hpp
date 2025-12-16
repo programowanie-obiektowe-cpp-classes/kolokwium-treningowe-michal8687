@@ -7,3 +7,8 @@
 #include <vector>
 
 // tutaj funkcja sortujTagliatelle
+template<typename it>
+void sortujTagliatelle(it first, it aft_end)
+{
+	std::sort(first, aft_end, [](Tagliatelle& a, Tagliatelle& b) { return a.ileMaki(1) > b.ileMaki(1); });
+}
